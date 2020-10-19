@@ -1,0 +1,41 @@
+@import '../../common/styles/styles.scss';
+
+.upload {
+    .content {
+        min-height: 150px;
+        border: 1px dashed grey;
+        display: flex;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-height: 200px;
+            max-width: 200px;
+        }
+
+        .top {
+            label.btn {
+                padding: 3px;
+                background-color: grey;
+                color: #fff;
+                text-align: center;
+                min-width: 70px;
+                border-radius: 0;
+
+                &:first-child {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+            }
+
+            label {
+                margin-bottom: 0;
+            }
+        }
+
+
+
+
+    }
+}

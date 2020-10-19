@@ -1,0 +1,14 @@
+@import '../../common/styles/styles.scss';
+
+input.form-control {
+    border: $border-table;
+    border-radius: 0;
+    max-height: 33px;
+
+    &:focus {
+        box-shadow: none;
+        outline: none;
+        border: $border-table;
+        border-radius: 0;
+    }
+}

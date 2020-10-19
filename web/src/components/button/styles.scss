@@ -1,0 +1,59 @@
+@import '../../common/styles/styles.scss';
+
+.content {
+    display: inline-block;
+
+    .button-custom {
+        cursor: pointer;
+        height: 36px;
+        border-radius: 4px;
+        background-color: $color-button;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+        @include flex-center(center, center);
+        position: relative;
+        padding: 0 15px;
+
+        .img {
+            height: 24px;
+            width: 24px;
+            @include flex-center(center, flex-start);
+
+            img {
+                height: 12px;
+                width: 12px;
+            }
+        }
+
+        span {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        &>div:last-child {
+            position: absolute;
+            top: 36px;
+            background-color: white;
+            left: 0;
+            padding: 8px 0;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+
+            button {
+                width: 100%;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                transition: 0.5s;
+                color: #222222;
+                padding: 12px 0;
+            }
+
+            button:hover {
+                background-color: #F7FAFC;
+            }
+        }
+    }
+}

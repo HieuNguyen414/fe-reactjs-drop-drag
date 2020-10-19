@@ -1,0 +1,44 @@
+.team {
+    .block-title {
+        height: 64px;
+        display: flex;
+        background-color: #fff;
+        align-items: center;
+        padding: 0 24px;
+        box-shadow: inset 0px -1px 0px #DFE6EB;
+
+        &__text {
+            &--sub {
+                width: 36px;
+            }
+
+            &--main {
+                font-size: 20px;
+                line-height: 24px;
+                padding-left: 8px;
+                margin: unset;
+                font-weight: 500;
+            }
+        }
+    }
+
+    #myTable {
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        margin-top: 0;
+
+        tr.item-center {
+            background: none;
+
+            &:hover {
+                background-color: #f1f1f1;
+            }
+        }
+
+        tr.item-center:last-child {
+            border-bottom: none;
+            margin-bottom: 8px;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+@import '../../../common/styles/styles.scss';
+
+form.loginForm {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border: $border-table;
+}

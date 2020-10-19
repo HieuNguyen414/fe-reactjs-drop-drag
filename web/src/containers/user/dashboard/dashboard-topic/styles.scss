@@ -1,0 +1,59 @@
+.wrap-dashboard-topic {
+    
+    .title--dashboard {
+        background-color: white;
+        padding: 14px 24px;
+        box-shadow: 2px 1px 2px silver;
+        height: 63px;
+        h1 {
+            font-size: 20px;
+            color: #0F2533;
+        }
+        &-right {
+
+            .search-topic {
+                height: 33px;
+                margin-right: 15px;
+                input {
+                    background-color: #E8ECEF;
+                    border: none;
+                    border-radius: 16px;
+                    height: 100%;
+                    padding: 15px;
+                }
+            }
+            .add-topic {
+                position: relative;
+                &:before {
+                    content: '+';
+                    color: white;
+                    position: absolute;
+                    top: 7px;
+                    left: 16px;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                }
+                i {
+                    font-family: 'Font Awesome Free 5';
+                    font-weight: bold;
+                }
+                button {
+                    background-color: #3D3DF2;
+                    padding-left: 43px;
+                    color: white;
+                }
+            }
+            
+        }
+    }
+
+    .body--tables {
+        height: calc(100vh - 123px);
+        // width: 100%;
+        padding: 24px;
+        background-color: #F2F2F2;
+        .wrap-table-topic {
+            
+        }
+    }
+}

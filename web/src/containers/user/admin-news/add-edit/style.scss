@@ -1,0 +1,183 @@
+.news{
+    min-height: calc(100vh - 60px);
+    background-color: #f2f5f7;
+
+    .block-title {
+        height: 64px;
+        width: 100%;
+        background-color: #FFFFFF;
+
+        img{
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        &__text--main{
+            color: #0F2533;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    .block-content{
+        display: flex;
+        justify-content: space-between;
+
+        .left{
+            display: block;
+            width: 54.5%;
+            padding: 1rem;
+            border-radius: 4px;
+            background-color: #FFFFFF;
+            box-shadow: 0 1px 3px 0 rgba(15,37,51,0.25);
+
+            .textarea {
+                height: 480px;
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #D1D9DE;
+                border-radius: 2px;
+                background-color: #F2F5F7;
+                resize: none;
+            }
+        }
+
+        .right{
+            display: block;
+            width: calc(100% - 54.5% - 24px);
+
+            .right-top{
+                @extend .left;
+                width: 100%;
+
+                .form-group{
+                    margin-left: 0;
+
+                    .fa-search{
+                        display: none;
+                    }
+
+                    input.form-control{
+                        height: 48px;
+                        width: 100%;
+                        border: 1px solid #D1D9DE;
+                        border-radius: 4px;
+                        background-color: #FFFFFF;
+                        padding: 0.5rem;
+                    }
+
+                    .dropdown{
+                        padding: 0.5rem;
+                        width: 100%;
+                        background-color: #FFFFFF;
+
+                        .items{
+                            width: 100%;
+                            border-radius: 2px;
+                            border-radius: 2px;
+                            padding: 6px 14px;
+
+                            &:hover{
+                                background-color: #F0F3F5;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-bottom{
+                @extend .left;
+                width: 100%;
+                margin-top: 1rem;
+
+                .no-border{
+                    padding-bottom: 0;
+                    border-bottom: none;
+                }
+
+                .form-date{
+                    display: flex;
+                    align-items: center;
+                    
+                    .time-option{
+                        width: 135px;
+                        background:#fff url('/img/calendar.png')  97% 50% no-repeat ;
+                        border: 1px solid #c4c4c4;
+                        border-radius: 4px;
+                        height: 36px;
+                        outline: none;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: -1px;
+                        padding-left: 12px;
+                        &::-webkit-inner-spin-button {
+                            display: none;
+                        }
+                        &::-webkit-calendar-picker-indicator {
+                            opacity: 0;
+                        }
+                        &::-webkit-clear-button {
+                            display: none;
+                        }
+                        &::-ms-clear {
+                            display: none;
+                        }
+                    }
+    
+                    span{
+                        font-size: 12px;
+                        color: #222222;
+                        padding: 0 0.5rem;
+                    }
+
+                    .hour-option,
+                    .minute-option {
+                        height: 32px;
+                        width: 48px;
+                        border: 1px solid #D1D9DE;
+                        border-radius: 4px;
+                        background-color: #FFFFFF;
+                        margin-right: 0.5rem;
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+
+                .block-button{
+                    padding: 28px 0 0;
+                    display: flex;
+                    justify-content: space-between;
+
+                    button:first-child{
+                        color: #FA3E3E;
+
+                        &:before{
+                            background: url('/img/ic_draft.png') center no-repeat;
+                        }
+                    }
+
+                    button:last-child{
+                        background-color: #3D3DF2;
+                        color: #FFFFFF;
+                        padding: 6px 15px;
+
+                        &::before{
+                            content: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .title {
+        color: #0F2533;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 16px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #F0F3F5;
+        margin-bottom: 1rem;
+    }
+}

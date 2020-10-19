@@ -1,0 +1,37 @@
+.chart{
+    padding: 1rem;
+    background-color: #fff;
+    margin-top: 1rem;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    .control{
+        .btn-radius{
+            background: #E8ECEF;
+            border: none;
+            border-radius: 25px;
+            font-weight: normal;
+            margin-right: 8px;
+            padding: 8px 16px;
+            font-size: 14px;
+            color: #444444;
+            transition: all .3s;
+            &.active{
+                background: #3D3DF2;
+                color: #fff;
+            }
+            &:hover{
+                background-color: #d1d9de;
+            }
+        }
+    }
+    .text-area{
+        background: #F7FAFC;
+        width: 100%;
+        border-radius: 4px;
+        color: #444444;
+        font-size: 14px;
+        padding: 12px 16px;
+        resize: none;
+        border: none;
+    }
+}

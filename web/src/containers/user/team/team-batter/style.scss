@@ -1,0 +1,22 @@
+@import '../../../../common/styles/styles.scss';
+
+.team-batter {
+    min-height: calc(100vh - 180px);
+    padding: 24px;
+    background-color: $bg-color-gray-light;
+    box-shadow: 0px -1px 0px #DFE6EB;
+
+    .wrapper {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        background-color: #fff;
+
+        .header th:nth-child(2) span{
+            text-align: left;
+        }
+
+        .item-center td:nth-child(2) .justify-center-table{
+            justify-content: left;
+        }
+    }
+}

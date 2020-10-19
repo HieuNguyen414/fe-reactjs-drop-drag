@@ -1,0 +1,119 @@
+.chart-setting.popup {
+    .popup_inner {
+        min-height: 344px;
+        height: auto;
+
+        .title-popup {
+            margin-bottom: 40px;
+        }
+
+        .line-1 {
+            height: 36px;
+            margin-bottom: 1rem;
+
+            .form-control {
+                width: 188px;
+            }
+
+            .input-form {
+                margin-top: 0;
+                width: 188px;
+            }
+
+            img {
+                width: 24px;
+                height: 24px;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+            }
+        }
+
+        .line-2 {
+            margin-bottom: 1.5rem;
+
+            button {
+                height: 32px;
+                width: 102px;
+                border: 1px solid #D1D9DE;
+                border-radius: 4px;
+                background-color: #F2F5F7;
+                cursor: pointer;
+                color: #0F2533;
+                font-size: 14px;
+                font-weight: 500;
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: #e0e1e2;
+                }
+            }
+        }
+
+        .line-3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .md-checkbox-custom {
+                margin: 0;
+
+                input {
+                    width: 20px;
+                    height: 20px;
+
+                    &:checked+label:after {
+                        width: 10px;
+                        height: 5px;
+                    }
+                }
+
+                label {
+                    color: #0F2533;
+                    font-size: 14px;
+                    font-weight: 500;
+
+                    &:before {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+
+            span {
+                color: #0F2533;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .time-option {
+                width: 168px;
+                background: #fff url('/img/calendar.png') 97% 50% no-repeat;
+                border: 1px solid #c4c4c4;
+                border-radius: 4px;
+                height: 36px;
+                outline: none;
+                font-size: 14px;
+                line-height: 20px;
+                padding-left: 12px;
+
+                &::-webkit-inner-spin-button {
+                    display: none;
+                }
+
+                &::-webkit-calendar-picker-indicator {
+                    opacity: 0;
+                }
+
+                &::-webkit-clear-button {
+                    display: none;
+                }
+
+                &::-ms-clear {
+                    display: none;
+                }
+            }
+        }
+    }
+}

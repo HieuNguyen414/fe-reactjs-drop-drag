@@ -1,0 +1,86 @@
+@import '../../../../common/styles/styles.scss';
+
+.team-pitcher {
+    min-height: calc(100vh - 180px);
+    padding: 24px;
+    background-color: $bg-color-gray-light;
+    box-shadow: 0px -1px 0px #DFE6EB;
+
+    .wrapper {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        background-color: #fff;
+
+        .header th:nth-child(2) span{
+            text-align: left;
+        }
+
+        .item-center td:nth-child(2) .justify-center-table{
+            justify-content: left;
+        }
+    }
+}
+
+.block-button {
+    padding: 1rem;
+    text-align: right;
+
+    button {
+        background: #FFFFFF;
+        border: 1px solid #D1D9DE;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #3D3DF2;
+        padding: 6px 12px;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover{
+            background: #EEEEEE;
+        }
+
+        &:before{
+            content: '';
+            display: inline-block;
+            width: 30px;
+            height: 18px;
+            position: relative;
+            top: 3px;
+            background: url('/img/download_24px_blue.png') center no-repeat;
+        }
+    }
+}
+
+.wrap-table{
+    #myTableTeam {
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        margin-top: 0;
+        .span-th{
+            text-align: left;
+        }
+        tr.item-center{
+            background: none;
+            &:hover{
+                background-color: #f1f1f1;
+            }
+        }
+        tr.item-center:last-child{
+            border-bottom: none;
+            margin-bottom: 8px;
+        }
+        th:first-child{
+            padding-left: 20px;
+        }
+        td:first-child{
+            padding-left: 20px;
+        }
+        .justify-center-table {
+            justify-content: start;
+        }
+    }
+}

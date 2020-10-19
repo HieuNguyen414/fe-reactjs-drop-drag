@@ -1,0 +1,73 @@
+.year-control{
+    display: flex;
+    justify-content: space-between;
+
+    .left{
+        display: flex;
+        align-items: center;
+
+        .title{
+            color: #222222;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .wrapper-tab {
+            margin-left: 50px;
+    
+            button {
+                width: 80px;
+                height: 32px;
+                font-size: 14px;
+                font-weight: 500;
+                color: #444444;
+                border: none;
+                border-radius: 16px;
+                background: none;
+                border-radius: 4px 0 0 4px;
+                border: 1px solid #D1D9DE;
+                border-right: none;
+                transition: 0.4s;
+                cursor: pointer;
+
+                &:last-child{
+                    border-radius: 0 4px 4px 0;
+                    border-left: none;
+                    border-right: 1px solid #D1D9DE;
+                }
+    
+                &:hover {
+                    background-color: #ddd;
+                }
+
+                &.active {
+                    background-color: #3D3DF2;
+                    border: 1px solid #3D3DF2;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .right{
+        .block-button{
+            padding: 0;
+        }
+    }
+}
+
+.year-content{
+    .tabcontent {
+        display: none;
+
+        &:first-child{
+            display: block;
+        }
+    }
+
+    #myTable{
+        .item-center:last-child{
+            font-weight: bold;
+        }
+    }
+}

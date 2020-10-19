@@ -1,0 +1,198 @@
+@import './../../../common/styles/styles.scss';
+.admin--company {
+    
+    &-title {
+        height: 65px;
+        @include flex-center(center, space-between);
+        h3 {
+            font-size: 20px;
+            font-style: italic;
+        }
+        padding: 16px 20px;
+    box-shadow: 1px 0px 4px silver;
+        .title-middle {
+            button {
+                font-size: 14px;
+                line-height: 20px;
+                color: white;
+                background-color: #3D3DF2;
+                border: none;
+                border-radius: 4px;
+                padding: 5px 12px;
+                cursor: pointer;
+            }
+            button:last-child {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                color: #6E7F8A;
+                background-color: #E8ECEF;
+            }
+            button:nth-child(1) {
+                border-top-right-radius: 0 !important;
+                border-bottom-right-radius: 0 !important;
+            }
+        }
+
+        .title-end {
+            display: flex;
+            &>div {
+                position: relative;
+                display: flex;
+                align-items: center;
+                input {
+                    height: 31px;
+                }
+                img {
+                    position: absolute;
+                }
+            }
+        }
+
+        .add {
+            position: relative;
+            border: none;
+            background-color: #3D3DF2;
+                padding: 9px 9px 9px 37px;
+                border-radius: 4px;
+                color: white;
+                font-size: 14px;
+            &:before {
+                content: '+';
+                color: white;
+                position: absolute;
+                top: 0px;
+                left: 16px;
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+                
+        }
+
+        .search-company {
+            margin-right: 12px;
+            max-width: 200px;
+            input {
+                background-color: #F2F5F7;
+                border: 1px solid #D1D9DE;
+                border-radius: 16px;
+                padding: 0 14px;
+                width: 100%;
+                &::placeholder {
+                    font-size: 14px;
+                }
+            }
+            img {
+                right: 7px;
+                top:11px;
+                width: 17px;
+            }
+    }
+    }
+
+    .wrap-items-company {
+        height: calc( 100vh - 125px);
+        background-color: #F2F2F2;
+        .admin--company-content {
+            background-color: #F2F2F2;
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 24px;
+        
+        .items-company:nth-child(4n) {
+            margin-right: 0;
+        }
+        .items-company {
+            padding: 18px 16px;
+            background: #FFFFFF;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            margin-bottom: 16px;
+            margin-right: 16px;
+            width: calc((100% - 48px) / 4);
+            &>div {
+                @include flex-center(center, space-between);
+                &>div {
+                    &>div {
+                        // display: none;
+                    }
+                }
+            }
+            h4 {
+                font-size: 15px;
+                color: #222222;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 12px;
+                color: #222222;
+                margin-bottom: 17px;
+            }
+
+            label {
+                font-size: 12px;
+                color: #999999;
+            }
+
+            .multi-dot {
+                cursor: pointer;
+                transform: rotate(90deg) translateX(-3px);
+            }
+
+            // .dropdown-menu {
+            //     box-shadow: 0px 1px 3px 0px silver;
+            //     left: 15px !important;
+            // }
+
+            .quantity-user + div img {
+                position: relative;
+                z-index: 10;
+            }
+
+            .quantity-user + div:hover {
+                position: relative;
+                &:after {
+                    width: 16px;
+                    height: 16px;
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    right: 0;
+                    background-color: silver;
+                    cursor: pointer;
+                    opacity: 0.3;
+                    border-radius: 999px;
+                    transform: scale(1.7);
+                    transition: 0.7s;
+                }
+                
+            }
+        }
+    }
+}
+
+.dropdown-dot {
+    position: relative;
+    div {
+        top: 25px;
+    }
+}
+
+@media (max-width : 1440px) {
+    .items-company {
+        h4 {
+            font-size: 13px !important;
+        }
+    }
+}
+
+@media (max-width : 1280px) {
+    .items-company {
+        h4 {
+            font-size: 12px !important;
+        }
+    }
+}

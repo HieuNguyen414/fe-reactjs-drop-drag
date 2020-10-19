@@ -1,0 +1,16 @@
+@import '../../../common/styles/styles';
+
+.content-home {
+    max-width: 640px;
+    width: 100%;
+    height: auto;
+    background-color: red;
+    background: url("/images/ios_background.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+
+    h3 {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: normal;
+    }
+}

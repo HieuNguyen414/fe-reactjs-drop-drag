@@ -1,0 +1,80 @@
+@import '../../../../common/styles/styles.scss';
+
+.team-schedule {
+    min-height: calc(100vh - 180px);
+    padding: 24px 24px;
+    background-color: $bg-color-gray-light;
+    box-shadow: 0px -1px 0px #DFE6EB;
+
+    .wrapper{
+        background: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+
+        .block-control{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 1rem 0;
+
+            select.form-control {
+                width: 120px;
+                font-size: 14px;
+                color: #222222;
+                background-color: white;
+                border: 1px solid silver;
+                border-radius: 4px;
+                padding: 7px 11px;
+                background: url(/img/ic_row.png) 93%/9px no-repeat white;
+                -webkit-appearance: none;
+                padding-right: 21px;
+                margin: 0 1rem;
+            }
+            
+            .btn-radius{
+                background: #E8ECEF;
+                border: none;
+                border-radius: 25px;
+                font-weight: 500;
+                margin-right: 8px;
+                padding: 8px 16px;
+                font-size: 14px;
+                color: #444444;
+                transition: all .3s;
+                &.active{
+                    background: #3D3DF2;
+                    color: #fff;
+                }
+                &:hover{
+                    background-color: #d1d9de;
+                }
+            }
+        }
+        
+        .wrap-table{
+            padding-bottom: 0;
+        }
+
+        #myTable{
+            margin-top: 0;
+
+            tr.item-center:last-child {
+                border-bottom: none;
+            }
+
+            thead tr th:nth-child(3),
+            thead tr th:nth-child(6){
+                .span-th{
+                    text-align: left;
+                }
+            }
+
+            tbody tr td:nth-child(3),
+            tbody tr td:nth-child(6){
+                .justify-center-table{
+                    justify-content: left;
+                }
+            }
+        }
+    }
+}

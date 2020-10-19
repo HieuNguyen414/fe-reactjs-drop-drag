@@ -1,0 +1,13 @@
+.gamelogs-control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .form-control{
+        height: 32px;
+    }
+
+    .block-button{
+        padding: 0;
+    }
+}

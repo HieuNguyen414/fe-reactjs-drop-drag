@@ -1,0 +1,124 @@
+@import '../../../common/styles/styles.scss';
+
+.login {
+    background: #F2F5F7;
+    min-height: 100vh;
+    padding-top: 26px;
+    position: relative;
+    margin-left: -80px;
+    width: calc(100% + 80px);
+}
+
+.title-page {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.text-message {
+    padding-bottom: 20px;
+    color: #444444;
+    font-size: 12px;
+    text-align: center;
+}
+
+.title-login {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 27px;
+    text-align: center;
+}
+
+form.loginForm {
+    width: 280px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: unset;
+    border: none;
+    position: absolute;
+    top: 233px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .group {
+        margin-bottom: 1rem;
+    }
+
+    .input-text {
+        background: #FFFFFF;
+        border: 1px solid #D1D9DE;
+        border-radius: 4px;
+        height: 48px;
+        max-height: none;
+        width: 100%;
+        padding: 0 1rem;
+        font-size: 14px;
+
+        &::placeholder {
+            font-size: 14px;
+            line-height: 17px;
+            color: #999999;
+        }
+    }
+
+    .notice {
+        padding-top: 4px;
+    }
+
+    .md-checkbox-custom {
+        input {
+            width: 20px;
+            height: 20px;
+
+            &:checked+label:after {
+                width: 10px;
+                height: 5px;
+                top: 2px;
+            }
+        }
+
+        label {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 22px;
+            color: #222222;
+
+            &:before {
+                width: 18px;
+                height: 18px;
+                top: 3px;
+            }
+        }
+    }
+
+    .button {
+        background: #292F33;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 4px;
+        width: 100%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        height: 48px;
+        border: none;
+        opacity: 1;
+        text-transform: uppercase;
+        transition: all 0.3s;
+
+        &:hover {
+            background: #292f33eb;
+            box-shadow: 0px 4px 14px -2px rgba(0, 0, 0, 0.75);
+        }
+    }
+}
+
+.formErrors p {
+    font-size: 12px;
+    color: #FA3E3E !important;
+    line-height: 14px;
+}

@@ -1,0 +1,50 @@
+{
+    "auth": {
+        "login": {
+            "title-page": "アシロボ",
+            "title": "ログイン",
+            "email": "電子メールアドレス",
+            "login-id": "ログインID",
+            "password": "パスワード",
+            "save-login-info": "ログイン情報を保存する"
+        },
+        "register": {
+            "title": "登録",
+            "email": "電子メールアドレス",
+            "password": "パスワード",
+            "confirmPassword": "パスワードを認証する"
+        },
+        "forgotPassword": {
+            "title": "パスワードをお忘れですか",
+            "email": "電子メールアドレス",
+            "submit": "参加する"
+        },
+        "logout": {
+            "title": "ログアウト"
+        }
+
+    },
+    "header": {
+        "top": "上",
+        "home": "ホーム",
+        "times": "時間サービス",
+        "upload": "アップロードサービス",
+        "register": "登録",
+        "login": "ログインする",
+        "error": ""
+    },
+    "common": {
+        "errForm": {
+            "length-pass": "短すぎる",
+            "invalid": "無効です",
+            "notMatch": "一致しません"
+        },
+        "pageError": {
+            "title": "ページが見つかりません",
+            "return": "家に帰る"
+        }
+    },
+    "teamReport": {
+        "placeholder": "菅野 智之"
+    }
+}

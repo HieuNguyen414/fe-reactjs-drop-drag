@@ -1,0 +1,10 @@
+@import '../../../common/styles/styles.scss';
+
+.footer {
+    height: $height-header;
+    width: 100%;
+    background-color: $color-common;
+    @include flex-center(center, center);
+    position: fixed;
+    bottom: 0;
+}
